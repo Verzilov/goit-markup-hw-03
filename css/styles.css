@@ -1,0 +1,409 @@
+/* pallete */
+/* iris rgba(77, 90, 229, 1) links colors*/
+/* ocean rgba(64, 75, 191, 1) */
+/* NAVY BLUE rgba(46, 47, 66, 1) overlay color*/
+/* SLATE rgba(67, 68, 85, 1) body text color*/
+/* cloud-color rgba(244, 244, 253, 1) */
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --primary-text-color: #434455;
+  --secondary-color: #ffffff;
+  --navy-blue: #2e2f42;
+  --links-text-color: #4d5ae5;
+  --cloud-color: #f4f4fd;
+  --ocean: #404bbf;
+  --border-color: #e7e9fc;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+}
+
+/* ----------HEADER--------- */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.adress-container {
+  margin-left: auto;
+}
+
+.sub-adress-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header {
+  font-size: 16px;
+  line-height: 1.5;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--links-text-color);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* margin-right: 76px; */
+}
+.header .logo {
+  margin-right: 76px;
+}
+
+.logo-secondary {
+  color: var(--navy-blue);
+}
+
+.logo-secondary-alt {
+  color: var(--cloud-color);
+}
+
+.header-nav {
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  font-style: normal;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.list-container {
+}
+
+.address {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--ocean);
+}
+
+/* ----------HERO1--------- */
+.hero {
+  background-color: var(--navy-blue);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-container {
+}
+
+.hero-caption {
+  font-family: "Roboto";
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  display: block;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+
+/* ----------buttons--------- */
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--ocean);
+  color: var(--secondary-color);
+  border: 1px solid transparent;
+}
+
+/* ----------button hero 1--------- */
+.hero-button {
+  color: var(--secondary-color);
+  background-color: var(--links-text-color);
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* --------buttons portfolio------- */
+.portfolio-button {
+  background-color: var(--cloud-color);
+  color: var(--links-text-color);
+  padding: 12px 24px 12px 24px;
+  border: 1px solid var(--border-color);
+}
+
+/* ----------GOALS 2--------- */
+
+.goals-section {
+  padding: 120px 0;
+}
+
+.goals-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.goals {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.goal-card {
+  width: calc((100% - 72px) / 4);
+}
+.goals-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+/* -------WHAT ARE WE DOING 3------ */
+.examples-list {
+  padding-bottom: 120px;
+}
+
+.example-picture {
+}
+
+.pic-example {
+  width: calc((100% -48) / 3);
+}
+
+.examples-wrap {
+  display: flex;
+  gap: 24px;
+}
+
+.sections-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+  margin-bottom: 72px;
+}
+
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ----------OUR TEAM 4--------- */
+.our-team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.team-container {
+}
+
+.worker-container {
+  padding: 32px 16px;
+}
+
+.our-team {
+  background-color: var(--cloud-color);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.team-card {
+  background-color: var(--secondary-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
+}
+
+.worker-name {
+  color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.job-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* ----------FOOTER--------- */
+
+.footer-container {
+}
+
+.footer {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: var(--navy-blue);
+  color: var(--cloud-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  display: block;
+  width: 264px;
+  /* margin-top: 16px; */
+}
+
+/* ------PAGE 2----- */
+
+/* PROJECTS EXAMPLE */
+
+.portfolio {
+  padding: 96px 0 120px;
+}
+
+.filter-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.portf-examples-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portf-examples {
+  /* border: 1px solid #e7e9fc; */
+  /* display: inline-block; */
+  /* padding-bottom: 32px; */
+  width: calc((100% - 48px) / 3);
+}
+
+.example-title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+  /* margin-top: 32px; */
+}
+
+.example-description {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.portfolio-pic {
+  display: block;
+}
+
+.port-example-block {
+  padding: 32px 16px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
